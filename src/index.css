@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.catalog-header2 h1 {
+  text-align: center;
+  font-size: 30px !important;
+  margin-bottom: 30px;
+}

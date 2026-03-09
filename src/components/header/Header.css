@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+.kugoo-header {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 5%;
+  border-bottom: 1px solid gainsboro;
+  font-size: 13px;
+  color: dimgray;
+}
+
+.top-left a {
+  margin-right: 15px;
+  color: dimgray;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.top-left a:hover {
+  color: black;
+}
+
+.top-center {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.top-social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.top-social-icons svg {
+  cursor: pointer;
+  color: dimgray;
+  transition: color 0.2s;
+}
+
+.top-social-icons svg:hover {
+  color: black;
+}
+
+.phone-number {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: black;
+}
+
+.info-icon {
+  margin-left: 5px;
+  font-size: 14px;
+  color: gray;
+  cursor: pointer;
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 5%;
+  gap: 30px;
+}
+
+.logo-section {
+  flex: 1;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: black;
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+  flex: 2;
+  justify-content: center;
+  gap: 15px;
+}
+
+.catalog-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background-color: mediumslateblue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.catalog-button:hover {
+  background-color: slateblue;
+}
+
+.catalog-button svg {
+  font-size: 18px;
+}
+
+.search-bar {
+  display: flex;
+  flex-grow: 1;
+  max-width: 600px;
+  border: 2px solid lightgray;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.search-dropdown {
+  background-color: whitesmoke;
+  border-right: 1px solid lightgray;
+}
+
+.search-dropdown button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 12px 15px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: black;
+  font-weight: 500;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 12px 15px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  width: 100%;
+}
+
+.search-button {
+  padding: 12px 20px;
+  background-color: mediumslateblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-button:hover {
+  background-color: slateblue;
+}
+
+.icons-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  color: dimgray;
+}
+
+.main-icon {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.main-icon:hover {
+  color: mediumslateblue;
+}
+
+.cart-icon-container {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.cart-icon-container .cart-icon {
+  font-size: 24px;
+  margin-right: 5px;
+  color: mediumslateblue;
+}
+
+.header-bottom-nav {
+  display: flex;
+  align-items: center;
+  background-color: lavender;
+  padding: 12px 5%;
+  font-size: 15px;
+  gap: 25px;
+  border-top: 1px solid lightgray;
+}
+
+.header-bottom-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+
+.header-bottom-nav a:hover {
+  color: mediumslateblue;
+}
+
+.header-bottom-nav .active-link {
+  background-color: mediumslateblue;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.promotions-link span {
+  background-color: mediumslateblue;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 50%;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px 5%;
+  border-top: 1px solid gainsboro;
+  position: absolute;
+  width: 90%;
+  z-index: 10;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-menu a {
+  padding: 10px 0;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.main-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  color: dimgray;
+}
+
+.main-icon-link {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.main-icon-link:hover .main-icon {
+  color: mediumslateblue;
+}
+
+.icon-badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  min-width: 18px;
+  text-align: center;
+}
+
+.cart-icon-container {
+  position: relative;
+}
+
+.cart-badge {
+  top: -5px;
+  right: -5px;
+}
+
+@media (max-width: 1024px) {
+  .header-bottom-nav {
+    display: none;
+  }
+
+  .header-main {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .search-section {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .search-bar {
+    max-width: 400px;
+  }
+
+  .main-icons {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    display: none;
+  }
+
+  .header-main {
+    padding: 10px 5%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .search-section {
+    order: 3;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+
+  .search-bar {
+    max-width: none;
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+
+  .search-dropdown {
+    display: none;
+  }
+
+  .search-bar input {
+    padding: 8px 10px;
+  }
+
+  .search-button {
+    padding: 8px 15px;
+  }
+
+  .catalog-button {
+    padding: 10px 15px;
+    order: 1;
+  }
+
+  .catalog-button span {
+    display: none;
+  }
+
+  .main-icons {
+    font-size: 22px;
+    gap: 15px;
+    order: 2;
+  }
+
+  .cart-icon-container span {
+    display: none;
+  }
+
+  .logo {
+    order: 0;
+    font-size: 24px;
+  }
+}

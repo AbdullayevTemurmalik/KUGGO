@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+.about-dealer-section {
+  padding: 50px 5%;
+  background-color: lightgray;
+  font-family: "Roboto", sans-serif;
+}
+
+.dealer-content-wrapper {
+  display: flex;
+  gap: 40px;
+  max-width: 1380px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.dealer-image-block {
+  flex: 1;
+  min-width: 50%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.dealer-main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.test-drive-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.overlay-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.overlay-subtitle {
+  font-size: 13px;
+  margin: 5px 0 0 0;
+}
+
+.overlay-button {
+  background-color: blueviolet;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+}
+
+.overlay-button:hover {
+  background-color: indigo;
+}
+
+.dealer-info-block {
+  flex: 1;
+  padding: 50px 40px 50px 0;
+}
+
+.dealer-title {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.dealer-text {
+  font-size: 15px;
+  color: dimgray;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.advantages-list {
+  margin-bottom: 25px;
+}
+
+.advantage-item {
+  display: flex;
+  align-items: flex-start;
+  font-size: 15px;
+  color: dimgray;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.advantage-icon {
+  color: red;
+  margin-right: 10px;
+  margin-top: 3px;
+  font-size: 12px;
+}
+
+.certificate-button {
+  background: none;
+  border: none;
+  color: blueviolet;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  border-bottom: 1px dashed blueviolet;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.certificate-button:hover {
+  color: indigo;
+  border-bottom: 1px dashed indigo;
+}
+
+@media (max-width: 1024px) {
+  .dealer-content-wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .dealer-image-block {
+    min-width: 100%;
+    height: 350px;
+  }
+
+  .dealer-info-block {
+    padding: 30px 5%;
+    text-align: center;
+  }
+
+  .dealer-title {
+    font-size: 24px;
+  }
+
+  .dealer-text {
+    text-align: left;
+  }
+
+  .advantages-list {
+    text-align: left;
+  }
+
+  .certificate-button {
+    display: block;
+    margin: 20px auto 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-dealer-section {
+    padding: 20px 0;
+  }
+
+  .dealer-content-wrapper {
+    border-radius: 0;
+  }
+
+  .dealer-image-block {
+    height: 250px;
+  }
+
+  .test-drive-overlay {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .overlay-button {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .dealer-info-block {
+    padding: 20px 5%;
+  }
+
+  .dealer-title {
+    font-size: 20px;
+  }
+
+  .dealer-text {
+    font-size: 14px;
+  }
+}

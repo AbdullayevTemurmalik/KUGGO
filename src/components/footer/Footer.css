@@ -1,0 +1,290 @@
+.main-footer {
+  background-color: whitesmoke;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-top-promo {
+  background-color: mediumslateblue;
+  padding: 30px 20px;
+  color: white;
+}
+
+.footer-promo-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo-text {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.promo-form {
+  display: flex;
+  gap: 10px;
+}
+
+.promo-input {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  width: 250px;
+}
+
+.promo-button {
+  background-color: dodgerblue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-main-nav {
+  border-bottom: 1px solid lightgray;
+}
+
+.footer-main-nav .footer-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+}
+
+.column-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: darkslategray;
+  margin-bottom: 20px;
+}
+
+.column-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.column-list li {
+  margin-bottom: 10px;
+}
+
+.column-list a {
+  font-size: 14px;
+  color: dimgray;
+}
+
+.contact-column-wrapper {
+  min-width: 350px;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.callback-link {
+  font-size: 14px;
+  color: dodgerblue;
+}
+
+.contact-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-block {
+  flex-basis: 40%;
+  min-width: 150px;
+}
+
+.contact-block-title {
+  font-size: 14px;
+  color: darkgray;
+  margin-bottom: 5px;
+}
+
+.contact-block a {
+  font-size: 18px;
+  font-weight: bold;
+  color: darkslategray;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.schedule {
+  font-size: 14px;
+  color: dimgray;
+}
+
+.store-address-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.store-address {
+  flex: 1;
+  min-width: 150px;
+}
+
+.address-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: darkslategray;
+  margin-bottom: 5px;
+}
+
+.store-address p {
+  font-size: 13px;
+  color: dimgray;
+  line-height: 1.5;
+}
+
+.footer-bottom-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: darkslategray;
+}
+
+.app-badges img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.social-section {
+  display: flex;
+  gap: 25px;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: dimgray;
+}
+
+.social-item svg {
+  margin-right: 5px;
+  color: darkslategray;
+}
+
+.social-count {
+  margin-left: 5px;
+  color: darkgray;
+}
+
+.legal-payment-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 12px;
+}
+
+.legal-links a {
+  color: dimgray;
+  margin-right: 15px;
+}
+
+.payment-icons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.payment-label {
+  border: 1px solid lightgray;
+  padding: 2px 5px;
+  border-radius: 2px;
+  color: darkgray;
+}
+
+.online-chat {
+  display: flex;
+  align-items: center;
+  color: dimgray;
+}
+
+@media (max-width: 992px) {
+  .footer-promo-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .promo-text {
+    margin-bottom: 15px;
+  }
+
+  .footer-main-nav .footer-content-wrapper {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .footer-column {
+    flex-basis: 45%;
+  }
+
+  .contact-column-wrapper {
+    min-width: 100%;
+  }
+  .contact-column {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-bottom-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .social-section {
+    flex-wrap: wrap;
+  }
+
+  .legal-payment-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
